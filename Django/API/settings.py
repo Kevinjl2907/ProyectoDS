@@ -73,10 +73,8 @@ MIDDLEWARE = [
 
 ''' CAMBIAR DESPUES A PRODUCCION '''
 CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:5173",
-    "http://127.0.0.1",
-    "http://localhost",
-    "http://localhost:3000"
+s
+    "https://main.d2anrgvy7s2j70.amplifyapp.com"
 ]
 
 ROOT_URLCONF = "API.urls"

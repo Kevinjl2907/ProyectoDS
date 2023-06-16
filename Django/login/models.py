@@ -15,7 +15,7 @@ from django.core.mail import send_mail
 @receiver(reset_password_token_created)
 def password_reset_token_created(sender, instance, reset_password_token, *args, **kwargs):
     email_plaintext_message = "Entra al siguiente link para poder reiniciar tu contraseña:" + \
-    "\n{}?token={}".format("http://localhost:5173/#/auth/newpassword/", reset_password_token.key)
+    "\n{}?token={}".format("https://main.d2anrgvy7s2j70.amplifyapp.com//auth/newpassword/", reset_password_token.key)
     send_mail(
         "Reinicio de contraseñar para {title}".format(title="plataforma institucional"), # titulo
         email_plaintext_message, # contenido del correo

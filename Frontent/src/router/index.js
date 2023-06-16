@@ -271,7 +271,7 @@ const router = createRouter({
                     name: 'overlay',
                     meta: {
                         breadcrumb: ['UI Kit', 'Overlay']
-                    },
+                    }, http://localhost:5173/
                     component: () => import('@/views/uikit/Overlay.vue')
                 },
                 {
