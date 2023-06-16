@@ -61,7 +61,7 @@ const comentariosRequest = async () =>  {
         body: JSON.stringify({ planTrabajo : planTrabajoSelec })
     };
 
-    var response = await fetch("http://127.0.0.1:8000/ObtenerComentarios/", request);
+    var response = await fetch("https://main.d2anrgvy7s2j70.amplifyapp.com/ObtenerComentarios/", request);
     var myJson = await response.json();
     return myJson.actividades
 };
@@ -75,7 +75,7 @@ const enviarComentarioRequest = async (mensaje,idactividad) =>  {
                                comentario: mensaje})
     };
 
-    var response = await fetch("http://127.0.0.1:8000/EnviarComentarios/", request);
+    var response = await fetch("https://main.d2anrgvy7s2j70.amplifyapp.com/EnviarComentarios/", request);
     var myJson = await response.json();
     //console.log(myJson)
 };

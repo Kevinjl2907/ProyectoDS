@@ -16,7 +16,7 @@ const logoutRequest = async () => {
         headers: {"content-Type": "application/json",
                   "Authorization": localStorage.token}, //Token a5f4bab95e1d086c8fcec6ecdbe7fce0817dfe87
     };
-    var response = await fetch("http://127.0.0.1:8000/logout/", request)
+    var response = await fetch("https://main.d2anrgvy7s2j70.amplifyapp.com/logout/", request)
 
     var myJson = await response.json()
     if (myJson.response === 'unsuccessful') {

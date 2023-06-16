@@ -35,7 +35,7 @@ export default {
                 method: 'GET',
                 headers: { Authorization: localStorage.token},
             };
-            var response = await fetch('http://127.0.0.1:8000/ObtenerAActividades/', request);
+            var response = await fetch('https://main.d2anrgvy7s2j70.amplifyapp.com/ObtenerAActividades/', request);
             var myJson = await response.json();
             if (myJson.response === 'unsuccessful') {
               this.$swal.fire({

@@ -34,7 +34,7 @@ const loginRequest = async () =>  {
                                password : contraprueba['_rawValue'],})
     };
     disableButton = true;
-    var response = await fetch("http://127.0.0.1:8000/login/", request)
+    var response = await fetch("https://main.d2anrgvy7s2j70.amplifyapp.com/login/", request)
         //.then(response => response.json())
         //.then(data => token=data)
         //.catch(error => console.error(error));
@@ -69,7 +69,7 @@ const resetPassRequest = async () =>  {
         body: JSON.stringify({ username : correoprueba['_rawValue']})
     };
     
-    var response = await fetch("http://127.0.0.1:8000/reset/", request)
+    var response = await fetch("https://main.d2anrgvy7s2j70.amplifyapp.com/reset/", request)
     var myJson = await response.json()
     Swal.hideLoading()
     console.log(myJson)

@@ -103,7 +103,7 @@ export default {
 
           body: JSON.stringify(this.bodyCancelarActividad) //Token a5f4bab95e1d086c8fcec6ecdbe7fce0817dfe87
         };
-        var response = await fetch('http://127.0.0.1:8000/PublicarActividad/', request);
+        var response = await fetch('https://main.d2anrgvy7s2j70.amplifyapp.com/PublicarActividad/', request);
         var myJson = await response.json();
         console.log(this.bodyActividad);
         this.close();
@@ -152,7 +152,7 @@ export default {
 
             body: JSON.stringify(this.bodypublicarActividad) //Token a5f4bab95e1d086c8fcec6ecdbe7fce0817dfe87
           };
-          var response = await fetch('http://127.0.0.1:8000/PublicarActividad/', request);
+          var response = await fetch('https://main.d2anrgvy7s2j70.amplifyapp.com/PublicarActividad/', request);
           var myJson = await response.json();
           console.log(this.bodyActividad);
           if (myJson.response === 'unsuccessful') {
@@ -205,7 +205,7 @@ export default {
 
             body: this.fileAfiche //Token a5f4bab95e1d086c8fcec6ecdbe7fce0817dfe87
           };
-          var response = await fetch('http://127.0.0.1:8000/RealizarActividad/', request);
+          var response = await fetch('https://main.d2anrgvy7s2j70.amplifyapp.com/RealizarActividad/', request);
           var myJson = await response.json();
           if (myJson.response === 'unsuccessful') {
             console.log('no exito');
@@ -236,7 +236,7 @@ export default {
         method: "GET",
         headers: {"Authorization": localStorage.token}, //Token a5f4bab95e1d086c8fcec6ecdbe7fce0817dfe87
       };
-      var response = await fetch("http://127.0.0.1:8000//", request)
+      var response = await fetch("https://main.d2anrgvy7s2j70.amplifyapp.com//", request)
       var myJson = await response.json()
       if (myJson.response === 'unsuccessful') {
         console.log('no exito')
@@ -250,7 +250,7 @@ export default {
         method: 'GET',
         headers: { Authorization: localStorage.token } //Token a5f4bab95e1d086c8fcec6ecdbe7fce0817dfe87
       };
-      var response = await fetch('http://127.0.0.1:8000/PlanesTrabajoDisponibles/', request);
+      var response = await fetch('https://main.d2anrgvy7s2j70.amplifyapp.com/PlanesTrabajoDisponibles/', request);
       var myJson = await response.json();
       if (myJson.response === 'unsuccessful') {
         console.log('no exito');
@@ -267,7 +267,7 @@ export default {
 
         body: JSON.stringify(this.bodyActividad) //Token a5f4bab95e1d086c8fcec6ecdbe7fce0817dfe87
       };
-      var response = await fetch('http://127.0.0.1:8000/ObtenerActividades/', request);
+      var response = await fetch('https://main.d2anrgvy7s2j70.amplifyapp.com/ObtenerActividades/', request);
       var myJson = await response.json();
       console.log(this.bodyActividad);
       if (myJson.response === 'unsuccessful') {

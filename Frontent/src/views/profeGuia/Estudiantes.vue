@@ -61,7 +61,7 @@ export default {
             method: "GET",
             headers: {"Authorization": localStorage.token}, //Token a5f4bab95e1d086c8fcec6ecdbe7fce0817dfe87
         };
-        var response = await fetch("http://127.0.0.1:8000/ListaEstudiantes/", request)
+        var response = await fetch("https://main.d2anrgvy7s2j70.amplifyapp.com/ListaEstudiantes/", request)
         var myJson = await response.json()
         if (myJson.response === 'unsuccessful') {
             console.log('no exito')

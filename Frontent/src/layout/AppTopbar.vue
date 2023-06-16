@@ -26,7 +26,7 @@ const updatePicture = async () => {
         method: 'GET',
         headers: { Authorization: localStorage.token } //Token a5f4bab95e1d086c8fcec6ecdbe7fce0817dfe87
     };
-    var response = await fetch('http://127.0.0.1:8000/GetProfileImage/', request);
+    var response = await fetch('https://main.d2anrgvy7s2j70.amplifyapp.com/GetProfileImage/', request);
     var myJson = await response.json();
     localStorage.imgUrl = myJson.imgUrl
     //userImage = "/images/" + myJson.imgUrl

@@ -46,7 +46,7 @@ const changePassword = async () => {
                                password : pass._rawValue,})
     };
     
-    var response = await fetch("http://127.0.0.1:8000/reset/confirm/", request)
+    var response = await fetch("https://main.d2anrgvy7s2j70.amplifyapp.com/reset/confirm/", request)
     var myJson = await response.json();
     if(myJson['response'] == 'successful'){
         await Swal.fire({

@@ -170,7 +170,7 @@ export default {
                     codigoProfesor: codigo
                 })
             };
-            var response = await fetch('http://127.0.0.1:8000/darDeBajaAProfesor/', request);
+            var response = await fetch('https://main.d2anrgvy7s2j70.amplifyapp.com/darDeBajaAProfesor/', request);
             var myJson = await response.json();
             if (myJson.response === 'successful') {
                 this.$swal.fire({
@@ -218,7 +218,7 @@ export default {
                 method: 'GET',
                 headers: { Authorization: localStorage.token } //Token a5f4bab95e1d086c8fcec6ecdbe7fce0817dfe87
             };
-            var response = await fetch('http://127.0.0.1:8000/DetalleEquipo/', request);
+            var response = await fetch('https://main.d2anrgvy7s2j70.amplifyapp.com/DetalleEquipo/', request);
             //.then(response => response.json())
             //.then(data => token=data)
             //.catch(error => console.error(error));
@@ -235,7 +235,7 @@ export default {
                 method: 'GET',
                 headers: { Authorization: localStorage.token } //Token a5f4bab95e1d086c8fcec6ecdbe7fce0817dfe87
             };
-            var response = await fetch('http://127.0.0.1:8000/DetalleProfes/', request);
+            var response = await fetch('https://main.d2anrgvy7s2j70.amplifyapp.com/DetalleProfes/', request);
             var myJson = await response.json();
             if (myJson.response === 'unsuccessful') {
                 console.log('no exito');
@@ -287,7 +287,7 @@ export default {
                 headers: { Authorization: localStorage.token }, //Token a5f4bab95e1d086c8fcec6ecdbe7fce0817dfe87
                 body: this.profeFoto
             };
-            var response = await fetch('http://127.0.0.1:8000/registrarProfesor/', request);
+            var response = await fetch('https://main.d2anrgvy7s2j70.amplifyapp.com/registrarProfesor/', request);
             var myJson = await response.json();
             if (myJson.response === 'successful') {
                 this.regProfDiag();
@@ -373,7 +373,7 @@ export default {
                 headers: { Authorization: localStorage.token }, //Token a5f4bab95e1d086c8fcec6ecdbe7fce0817dfe87
                 body: this.profeFoto
             };
-            var response = await fetch('http://127.0.0.1:8000/cambiarInfoProfesor/', request);
+            var response = await fetch('https://main.d2anrgvy7s2j70.amplifyapp.com/cambiarInfoProfesor/', request);
             var myJson = await response.json();
             if (myJson.response === 'successful') {
                 this.updatePicture();
@@ -417,7 +417,7 @@ export default {
                 method: 'GET',
                 headers: { Authorization: localStorage.token } //Token a5f4bab95e1d086c8fcec6ecdbe7fce0817dfe87
             };
-            var response = await fetch('http://127.0.0.1:8000/GetProfileImage/', request);
+            var response = await fetch('https://main.d2anrgvy7s2j70.amplifyapp.com/GetProfileImage/', request);
             var myJson = await response.json();
             localStorage.imgUrl = myJson.imgUrl
             console.log(myJson.imgUrl)
@@ -458,7 +458,7 @@ export default {
                     rol: this.rolIngreso
                 })
             };
-            var response = await fetch('http://127.0.0.1:8000/registrarNuevoIntegrante/', request);
+            var response = await fetch('https://main.d2anrgvy7s2j70.amplifyapp.com/registrarNuevoIntegrante/', request);
             var myJson = await response.json();
             if (myJson.response === 'successful') {
                 this.openAddProfe2Team();
@@ -538,7 +538,7 @@ export default {
                     codigoProfesor: this.selectedRecord.codigo
                 })
             };
-            var response = await fetch('http://127.0.0.1:8000/definirCoordinador/', request);
+            var response = await fetch('https://main.d2anrgvy7s2j70.amplifyapp.com/definirCoordinador/', request);
             var myJson = await response.json();
             if (myJson.response === 'successful') {
                 this.selectedRecord = null
@@ -577,7 +577,7 @@ export default {
                 method: 'GET',
                 headers: { Authorization: localStorage.token} //Token a5f4bab95e1d086c8fcec6ecdbe7fce0817dfe87
             };
-            var response = await fetch('http://127.0.0.1:8000/ObtenerSedes/', request);
+            var response = await fetch('https://main.d2anrgvy7s2j70.amplifyapp.com/ObtenerSedes/', request);
             var myJson = await response.json();
             if (myJson.response === 'unsuccessful') {
                 console.log('no exito');
@@ -591,7 +591,7 @@ export default {
                 method: 'GET',
                 headers: { Authorization: localStorage.token } //Token a5f4bab95e1d086c8fcec6ecdbe7fce0817dfe87
             };
-            var response = await fetch('http://127.0.0.1:8000/ObtenerRoles/', request);
+            var response = await fetch('https://main.d2anrgvy7s2j70.amplifyapp.com/ObtenerRoles/', request);
             var myJson = await response.json();
             if (myJson.response === 'unsuccessful') {
                 console.log('no exito');
