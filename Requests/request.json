@@ -1,0 +1,12 @@
+{   
+    "idactividad": 32,
+    "semana": 1,
+    "planTrabajo":"2021 S1",
+    "tipo" : "orientadora",
+    "nombre" : "DOP - Procastinacion",
+    "fecha" : "2021-05-06 07:00:00",
+    "fechaPublicacion" : "2021-05-02 07:00:00",
+    "diasRecordatorios" : 1,
+    "esvirtual" : false,
+    "responsables" : [84]
+}
